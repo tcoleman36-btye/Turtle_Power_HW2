@@ -1,0 +1,217 @@
+        html, body {
+        margin: 0;
+        padding: 0;    
+        }
+
+        body {
+         background-image: url(assignment_2/background.png);
+         font-family: Verdana, Tahoma, sans-serif;
+         font-size: 8pt;
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 24pt;
+            font-weight: bold;
+        }
+        
+        .banner {
+            background-image: url(assignment_2/bannerbackground.png);
+            background-repeat: repeat-x;
+            height: 50px;
+        }
+
+        .content-border {
+            width: 800px;
+            margin: 0 auto;
+            border: 4px solid grey;
+        }
+
+        #score {
+            width: 550px;
+        }
+
+        .review-score{
+            display:flex;
+            align-items: center;
+            width: 550px;
+            margin: 0;
+            background-image: url(assignment_2/rottenbackground.png);
+            background-repeat: repeat-x;
+            position: relative;
+            
+        }
+
+        h2 {
+            display: inline;
+            font-size: 48pt;
+            font-weight: bold;
+            position: absolute;
+            bottom: -3.0pc;
+            left: 7pc;
+        }
+
+        .red-highlight {
+            color: red;
+        }
+
+        .review-total {
+            display: inline;
+            position: relative;
+            left: 12pc;
+            top: 1.5pc;
+            color: white;
+            font-size: 8pt;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /*comment grid*/
+        .grid-container {
+            display: grid;
+            grid-template-columns: 47% 47%;
+            column-gap: 2%;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+
+        .review-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .gif-icons {
+            float: left;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .comment {
+            border: 2px solid grey;
+            background-color: #e1d697;
+            padding: 8px;
+            font-size: 8pt;
+            font-weight: bold;
+        }
+
+        .comment h3 {
+            margin: 0;
+        }
+
+        .critic {
+            padding: 5px;
+        }
+
+        .critic h4 {
+            font-size: 8pt;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        /* Overlay layout*/
+        .content-layout {
+            display: flex;
+            align-items: stretch;
+        }
+
+        #overview {
+            width: 250px;
+            flex-shrink: 0;
+            background-color: #A2B964;
+            font-family: Arial, sans-serif;
+            font-size: 8pt;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #overview dl {
+            padding: 0 10px;
+            
+        }
+
+        #overview dt {
+            margin-top: 1.5rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #A2B964;
+            text-align: center;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .validation {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            text-align: right;
+            z-index: 1000;
+        }
+
+        /*Mobile Friendly*/
+        @media screen and (max-width: 600px) {
+
+            .content-border {
+                width: 100%;
+                border-width: 2px;
+                box-sizing: border-box;
+            }
+
+            .title {
+                font-size: 20pt;
+            }
+
+            .content-layout {
+                flex-direction: column;
+            }
+
+            #score {
+                width: 100%;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 5px;
+            }
+
+            .review-column {
+                gap: 10px;
+            }
+
+            .review-score {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .review-total {
+                left: auto;
+                margin-left: auto;
+                margin-right: 10px;
+            }
+
+            h2 {
+                left: 100px;
+            }
+
+            #overview {
+                width: 100%;
+            }
+
+            .movie-overview img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .validation {
+                transform: scale(0.8);
+                transform-origin: bottom right;
+            }
+            
+        }
+        

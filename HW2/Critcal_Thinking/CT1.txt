@@ -1,0 +1,1 @@
+Reflection: Base on what happen in the screenshot, removing the background color effects all of the review boxes. This is because all of them use the same class to make the color appear. That being said this would also happen if we where to remove the boarder in CSS. The only way for it to not effect the other boxes is for the class to be reviews on one of the boxes.
